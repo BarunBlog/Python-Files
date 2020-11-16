@@ -1,0 +1,10 @@
+
+1. Please tell me who you are error
+
+.git => config
+
+[user]
+	
+	email ="bhattacharjeebarun25@gmail.com"
+
+	name ="Barun"

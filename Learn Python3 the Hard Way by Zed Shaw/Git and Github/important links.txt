@@ -1,0 +1,8 @@
+https://guides.github.com/activities/hello-world/
+
+
+
+How to Manage Git and GitHub Projects with Atom:
+
+https://www.hongkiat.com/blog/manage-git-github-atom/ 
+

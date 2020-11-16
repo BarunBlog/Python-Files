@@ -1,0 +1,7 @@
+*.pyc
+*~
+/.vscode
+__pycache__
+myvenv
+Python Books/
+.env
