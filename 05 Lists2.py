@@ -4,40 +4,41 @@ li3 = li[:]
 
 print(li,' ',len(li), "\n")
 
-print(li[-1],' ',li[-2])
+print(li[-1],' ',li[-2], "\n")
 
 li2 = ["computer", 10, 12.5, "Banglades"]
-print(type(li2[2]))
+print(type(li2[2]), "\n")
 
-print(li[-2:])
-print(li[:-1])
+print(li[-2:], "\n")
+print(li[:-1], "\n")
 
-print(li[0:4:1])
-print(li[0:4:2])
-print(li[0:4:3])
+print(li[0:4:1], "\n")
+print(li[0:4:2], "\n")
+print(li[0:4:3], "\n")
 
-print(li[::1])
-print(li[::-1]) #List reversed
+print(li[::1], "\n")
+print(li[::-1], "\n") #List reversed
 
 li[2] = "mobile phone"
 
 li = li+['pencil']
 
 li.append("mouse")
-print(li)
+print(li, "\n")
 
 li.remove('pencil')
-print(li)
+print(li, "\n")
 
 del li[4]
-print(li)
+print(li, "\n")
 
 del li[1:3]
 
+print(li2,"\n")
 remove = li2.pop()
-print(li2)
+print(li2, "\n")
 
-li2.pop(2)
+li2.pop(1)
 print(li2,"\n")
 
 

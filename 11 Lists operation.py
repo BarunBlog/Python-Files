@@ -19,7 +19,7 @@ print(li)
 
 li2 = [10,11,23,15,20]
 li.extend(li2) ## 2 lists are extended
-print(li)
+print("li after extend ", li)
 
 li3 = [1,2,2,3,5,6,6]
 li3.remove(2)

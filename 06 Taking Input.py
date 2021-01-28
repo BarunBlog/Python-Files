@@ -7,12 +7,20 @@ print(type(inp))
 #Taking 3 input sparated by spaces
 print("Take 3 input sparated by spaces")
 a,b,c = input().split(" ")
-print(a," ",b," ",c)
+a,b,c = int(a), int(b), int(c)
+'''
+Same as below
+li = [1,2,3]
+
+a,b,c = li
+'''
+print(a,b,c)
 
 #Taking 3 input sparated by comma
 print("Take 3 input sparated by comma")
-a,b,c = input().split(",")
-print(a," ",b," ",c)
+a,b,c = input().split(", ")
+a,b,c = int(a), int(b), int(c)
+print(a,b,c)
 
 name = input('What is your name? ')
 print('Hello ',name)
