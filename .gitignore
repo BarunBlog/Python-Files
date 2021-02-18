@@ -5,3 +5,4 @@ __pycache__
 myvenv
 Python Books/
 .env
+prc*.py

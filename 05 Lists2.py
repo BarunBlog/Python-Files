@@ -26,6 +26,10 @@ li = li+['pencil']
 li.append("mouse")
 print(li, "\n")
 
+# inserting elements to the given index
+li.insert(1, "keyboard")
+print(li, "\n")
+
 li.remove('pencil')
 print(li, "\n")
 
