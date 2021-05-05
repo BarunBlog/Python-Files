@@ -1,24 +1,11 @@
-class Vehicle:
-    def __init__(self, name, max_speed, mileage):
-        self.name = name
-        self.max_speed = max_speed
-        self.mileage = mileage
-
-    def print_vehicle(self):
-        print(f"Name: {self.name}, Speed: {self.max_speed}, Mileage: {self.mileage}")
-
-    def seating_capacity(self, capacity):
-        return f"The seating capacity of a {self.name} is {capacity} passengers"
-
-class Bus(Vehicle):
-    # Overriding method
-    def seating_capacity(self, capacity=50):
-        return f"The seating capacity of a {self.name} is {capacity} passengers"
+regex_integer_in_range = r"^[1-9][0-9][0-9][0-9][0-9][0-9]$"
+regex_alternating_repetitive_digit_pair = r"(?=([0].[0]))|(?=([1].[1]))|(?=([2].[2]))|(?=([3].[3]))|(?=([4].[4]))|(?=([5].[5]))|(?=([6].[6]))|(?=([7].[7]))|(?=([8].[8]))|(?=([9].[9]))"
 
 
-vehicle1 = Vehicle("Car", 200, 10)
-vehicle1.print_vehicle()
+import re
+P = input()
 
-bus1 = Bus("Volvo", 180, 12)
-bus1.print_vehicle()
-print(bus1.seating_capacity(51))
+print(re.match(regex_integer_in_range, P))
+
+print (bool(re.match(regex_integer_in_range, P))
+and len(re.findall(regex_alternating_repetitive_digit_pair, P)) < 2)
