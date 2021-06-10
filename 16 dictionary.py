@@ -16,7 +16,7 @@ for i in age:
     print(i)
 print()
 
-print('print all')    
+print('print all')
 for i in age:
     print(i,' ',age[i])
 print()
