@@ -6,3 +6,5 @@ myvenv
 Python Books/
 .env
 prc*.py
+.idea/
+Projects/

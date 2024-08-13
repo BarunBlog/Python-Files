@@ -1,60 +1,39 @@
-import math
-
-memo = {}
-
-def func(number):
-    number = int(number)
-
-    if number in memo:
-        return memo[number]
-
-
-
-    x = math.log(number, 2) # log(number) / log(2)
-
-    n_lower = pow(2, math.floor(x))
-    n_upper = pow(2, math.ceil(x))
-
-    ans = 0
-
-    if n_lower == n_upper:
-        ans = int(x)
-    if n_lower != n_upper:
-        if number % 2 == 0:
-            ans = 1 + func(number//2)
-        else:
-            value1 = 2 + func((number-1)//2)
-            value2 = 2 + func((number+1)//2)
-            ans = min(value1, value2)
-
-    memo[number] = ans
-    return memo[number]
-
-
-
-def solution(n):
-    number = int(n)
-
-    x = math.log(number, 2) # log(number) / log(2)
-
-    n_lower = pow(2, math.floor(x))
-    n_upper = pow(2, math.ceil(x))
-
-    global memo
-
-    if n_lower == n_upper:
-        return int(x)
-    else:
-        return func(number)
-
-
-
 
 def main():
-    n = input()
-    min_op = solution(n)
-    print(min_op)
+
+    str = input()
+    ln = len(str)
+
+    counter = [0] * 26
+
+    for chr in str:
+        counter[ ord(chr) - 97 ] += 1
+
+    unique_num = set()
+    for n in counter:
+        if n!=0:
+            unique_num.add(n)
+
+    if len(unique_num) == 1:
+        print('YES')
+    elif len(unique_num) > 2:
+        print('NO')
+    else:
+        first = list(unique_num)[0]
+        second = list(unique_num)[1]
+
+        if abs(first - second) > 1:
+            print('NO')
+
+        else:
+            for occ in counter:
 
 
-if __name__ == "__main__":
+
+
+
+
+
+
+if __name__ == '__main__':
     main()
