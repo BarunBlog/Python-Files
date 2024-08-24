@@ -41,7 +41,7 @@ def main():
 
     sl = Solution()
 
-    print(sl.groupAnagrams(strs))
+    print(sl.groupAnagrams2(strs))
 
 if __name__ == "__main__":
     main()
