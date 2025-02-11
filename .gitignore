@@ -6,5 +6,6 @@ myvenv
 Python Books/
 .env
 prc*.py
+practice/
 .idea/
 Projects/
